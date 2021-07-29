@@ -2,9 +2,9 @@ const express = require('express')
 // import yt-search
 const yts = require( 'yt-search' )
 
-
+const cors = require('cors')
 const app = express()
-
+app.use(cors())
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
   res.send(`Where's My PlaylistID? 😠`)
